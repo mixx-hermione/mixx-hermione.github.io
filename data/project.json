@@ -1,0 +1,991 @@
+{
+  "schemaVersion": "1.1",
+  "project": {
+    "id": "rich-published-pwa-smoke",
+    "title": "Rich Published PWA Smoke Fixture",
+    "description": "Generated from the Tool path to test landing, info pages, all media types, media chips, and storyboard content.",
+    "version": "9.9.0",
+    "buildId": "build-2026-07-03",
+    "updatedAt": "2026-07-03T04:30:00.000Z",
+    "coverImage": "./data/media/images/media-image.png",
+    "thumbnail": "./data/media/images/media-image.png",
+    "icon": "./data/media/images/media-image.png"
+  },
+  "meta": {
+    "id": "rich-published-pwa-smoke",
+    "title": "Rich Published PWA Smoke Fixture",
+    "description": "Generated from the Tool path to test landing, info pages, all media types, media chips, and storyboard content.",
+    "version": "9.9.0",
+    "buildId": "build-2026-07-03",
+    "updatedAt": "2026-07-03T04:30:00.000Z",
+    "coverImage": "./data/media/images/media-image.png",
+    "thumbnail": "./data/media/images/media-image.png",
+    "icon": "./data/media/images/media-image.png"
+  },
+  "pois": [
+    {
+      "id": "poi-origin",
+      "title": "Origin Plaza",
+      "description": "Primary POI with image and model media.",
+      "lat": 33.755,
+      "lon": -84.39,
+      "altitude": 12,
+      "heading": 45,
+      "pitch": -15,
+      "roll": null,
+      "address": null,
+      "category": "cat-origin",
+      "media": [
+        {
+          "id": "media-image",
+          "type": "image",
+          "url": "./data/media/images/media-image.png",
+          "title": "Gallery Image"
+        },
+        {
+          "id": "media-model",
+          "type": "model3d",
+          "url": "./data/media/models/media-model.glb",
+          "title": "Gallery Model"
+        }
+      ],
+      "thumbnail": "data:image/png;base64,aGVybw==",
+      "timeline": {
+        "start": "1920-01-01",
+        "end": "1930-12-31"
+      }
+    },
+    {
+      "id": "poi-media-lab",
+      "title": "Media Lab",
+      "description": "Secondary POI with audio, video, and document media.",
+      "lat": 33.756,
+      "lon": -84.391,
+      "altitude": null,
+      "heading": null,
+      "pitch": null,
+      "roll": null,
+      "address": null,
+      "category": "cat-media",
+      "media": [
+        {
+          "id": "media-video",
+          "type": "video",
+          "url": "./data/media/videos/media-video.mp4",
+          "title": "Gallery Video"
+        },
+        {
+          "id": "media-audio",
+          "type": "audio",
+          "url": "./data/media/audio/media-audio.mp3",
+          "title": "Gallery Audio"
+        },
+        {
+          "id": "media-document",
+          "type": "embed",
+          "url": "./data/media/documents/media-document.pdf",
+          "title": "Gallery PDF"
+        }
+      ],
+      "thumbnail": null,
+      "timeline": {
+        "start": "1945-01-01",
+        "end": "1945-12-31"
+      }
+    }
+  ],
+  "phases": [
+    {
+      "id": "phase-arrival",
+      "title": "Arrival Phase",
+      "order": 0,
+      "poiIds": [
+        "poi-origin"
+      ],
+      "visibilityMode": "focus",
+      "updatedAt": "2026-07-03T05:46:02.222Z",
+      "snapshot": {
+        "viewMode": "map3d",
+        "mapState": {
+          "lat": 33.755,
+          "lon": -84.39,
+          "zoom": 16,
+          "height": 250,
+          "heading": 45,
+          "pitch": -25
+        },
+        "timelineState": {
+          "start": 1920,
+          "end": 1930
+        }
+      },
+      "narrative": "The storyboard starts at Origin Plaza, then opens image Gallery Image and model Gallery Model evidence.",
+      "mediaIds": [
+        "media-image",
+        "media-model"
+      ]
+    },
+    {
+      "id": "phase-media-lab",
+      "title": "Media Lab Phase",
+      "order": 1,
+      "poiIds": [
+        "poi-media-lab"
+      ],
+      "visibilityMode": "highlight",
+      "updatedAt": "2026-07-03T05:46:02.222Z",
+      "narrative": "At Media Lab, test video Gallery Video, sound Gallery Audio, document Gallery PDF, link Reference Link, and time 1945 marker.",
+      "mediaIds": [
+        "media-video",
+        "media-audio",
+        "media-document"
+      ]
+    }
+  ],
+  "story": {
+    "html": "<span class=\"text-chip\" data-kind=\"phase\" data-phase-id=\"phase-arrival\">Arrival Phase</span>\n<p>The storyboard starts at <span class=\"text-chip\" data-kind=\"poi\" data-poi-id=\"poi-origin\" data-poi-lat=\"33.755\" data-poi-lon=\"-84.39\">Origin Plaza</span>, then opens image <span class=\"text-chip text-chip--media\" data-kind=\"image\" data-media-id=\"media-image\" data-url=\"./data/media/images/media-image.png\" data-title=\"Gallery Image\" data-description=\"Image chip description\">Gallery Image</span> and model <span class=\"text-chip text-chip--media\" data-kind=\"model\" data-media-id=\"media-model\" data-url=\"./data/media/models/media-model.glb\" data-title=\"Gallery Model\">Gallery Model</span> evidence.</p>\n<h2><span class=\"text-chip\" data-kind=\"phase\" data-phase-id=\"phase-media-lab\">Media Lab Phase</span></h2>\n<p>At <span class=\"text-chip\" data-kind=\"poi\" data-poi-id=\"poi-media-lab\" data-poi-lat=\"33.756\" data-poi-lon=\"-84.391\">Media Lab</span>, test video <span class=\"text-chip text-chip--media\" data-kind=\"video\" data-media-id=\"media-video\" data-url=\"./data/media/videos/media-video.mp4\" data-title=\"Gallery Video\">Gallery Video</span>, sound <span class=\"text-chip text-chip--media\" data-kind=\"sound\" data-media-id=\"media-audio\" data-url=\"./data/media/audio/media-audio.mp3\" data-title=\"Gallery Audio\">Gallery Audio</span>, document <span class=\"text-chip text-chip--media\" data-kind=\"document\" data-media-id=\"media-document\" data-url=\"./data/media/documents/media-document.pdf\" data-title=\"Gallery PDF\">Gallery PDF</span>, link <span class=\"text-chip text-chip--link\" data-kind=\"link\" data-url=\"https://example.com/rich-pwa-smoke\">Reference Link</span>, and time <span class=\"text-chip text-chip--time\" data-kind=\"time\" data-time=\"1945-05-08T12:00\">1945 marker</span>.</p>",
+    "text": "Arrival Phase. The storyboard starts at Origin Plaza and uses every published media chip type. Media Lab Phase tests video, audio, document, link, and time chips.",
+    "chips": [
+      {
+        "type": "phase",
+        "label": "Arrival Phase",
+        "phaseId": "phase-arrival"
+      },
+      {
+        "type": "poi",
+        "label": "Origin Plaza",
+        "poiId": "poi-origin",
+        "lat": 33.755,
+        "lon": -84.39
+      },
+      {
+        "type": "media",
+        "label": "Gallery Image",
+        "mediaType": "image",
+        "mediaUrl": "./data/media/images/media-image.png",
+        "title": "Gallery Image",
+        "description": "Image chip description",
+        "mediaId": "media-image"
+      },
+      {
+        "type": "media",
+        "label": "Gallery Model",
+        "mediaType": "model",
+        "mediaUrl": "./data/media/models/media-model.glb",
+        "title": "Gallery Model",
+        "mediaId": "media-model"
+      },
+      {
+        "type": "phase",
+        "label": "Media Lab Phase",
+        "phaseId": "phase-media-lab"
+      },
+      {
+        "type": "poi",
+        "label": "Media Lab",
+        "poiId": "poi-media-lab",
+        "lat": 33.756,
+        "lon": -84.391
+      },
+      {
+        "type": "media",
+        "label": "Gallery Video",
+        "mediaType": "video",
+        "mediaUrl": "./data/media/videos/media-video.mp4",
+        "title": "Gallery Video",
+        "mediaId": "media-video"
+      },
+      {
+        "type": "media",
+        "label": "Gallery Audio",
+        "mediaType": "sound",
+        "mediaUrl": "./data/media/audio/media-audio.mp3",
+        "title": "Gallery Audio",
+        "mediaId": "media-audio"
+      },
+      {
+        "type": "media",
+        "label": "Gallery PDF",
+        "mediaType": "document",
+        "mediaUrl": "./data/media/documents/media-document.pdf",
+        "title": "Gallery PDF",
+        "mediaId": "media-document"
+      },
+      {
+        "type": "link",
+        "label": "Reference Link",
+        "url": "https://example.com/rich-pwa-smoke"
+      },
+      {
+        "type": "time",
+        "label": "1945 marker",
+        "time": "1945-05-08T12:00"
+      }
+    ]
+  },
+  "categories": [
+    {
+      "id": "cat-origin",
+      "name": "Origin",
+      "color": "#ff6600",
+      "icon": "museum"
+    },
+    {
+      "id": "cat-media",
+      "name": "Media",
+      "color": "#00aa88",
+      "icon": "camera"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "era-1920s",
+      "label": "1920s",
+      "start": "1920-01-01",
+      "end": "1929-12-31"
+    },
+    {
+      "id": "era-1940s",
+      "label": "1940s",
+      "start": "1940-01-01",
+      "end": "1949-12-31"
+    }
+  ],
+  "media": [
+    {
+      "id": "media-image",
+      "type": "image",
+      "url": "./data/media/images/media-image.png",
+      "title": "Gallery Image",
+      "caption": "Image caption from Media tab."
+    },
+    {
+      "id": "media-video",
+      "type": "video",
+      "url": "./data/media/videos/media-video.mp4",
+      "title": "Gallery Video",
+      "caption": "Video caption from Media tab."
+    },
+    {
+      "id": "media-audio",
+      "type": "audio",
+      "url": "./data/media/audio/media-audio.mp3",
+      "title": "Gallery Audio",
+      "caption": "Audio caption from Media tab."
+    },
+    {
+      "id": "media-model",
+      "type": "model3d",
+      "url": "./data/media/models/media-model.glb",
+      "title": "Gallery Model",
+      "caption": "Model caption from Media tab."
+    },
+    {
+      "id": "media-document",
+      "type": "embed",
+      "url": "./data/media/documents/media-document.pdf",
+      "title": "Gallery PDF",
+      "caption": "Document caption from Media tab."
+    },
+    {
+      "id": "media-external-video",
+      "type": "video",
+      "url": "https://youtu.be/rich-pwa-smoke",
+      "title": "External Video",
+      "caption": "External video URL should remain remote."
+    }
+  ],
+  "cesium": {
+    "terrain": {
+      "type": "url",
+      "terrainUrl": "https://tiles.example.test/terrain"
+    },
+    "imagery": [
+      {
+        "type": "url",
+        "imageryUrl": "https://tiles.example.test/imagery/{z}/{x}/{y}.png",
+        "default": true
+      }
+    ],
+    "tilesets": [
+      {
+        "id": "tileset-rich-smoke",
+        "type": "url",
+        "tilesetUrl": "https://tiles.example.test/rich-smoke/tileset.json",
+        "heightOffset": 7
+      }
+    ]
+  },
+  "infoPage": {
+    "enabled": true,
+    "hero": {
+      "headline": "Custom Landing: Rich Published PWA Smoke",
+      "thesis": "Landing and Info Page copy are customized from the Tool before export.",
+      "locationLabel": "Atlanta Test District"
+    },
+    "sections": {
+      "context": {
+        "enabled": true,
+        "body": "Info Page context: this PWA was generated specifically to verify published artifact rendering."
+      },
+      "whyItMatters": {
+        "enabled": true,
+        "mode": "bullets",
+        "bullets": [
+          "Landing copy survives export",
+          "All media types are packaged",
+          "Storyboard chips remain actionable"
+        ]
+      },
+      "themes": {
+        "enabled": true,
+        "items": [
+          {
+            "title": "Landing Customization",
+            "body": "The generated PWA should show custom landing and info text."
+          },
+          {
+            "title": "Media Coverage",
+            "body": "The generated PWA should expose image, video, audio, model, document, and external media entries."
+          }
+        ]
+      },
+      "howToExplore": {
+        "enabled": true,
+        "body": "Launch the experience, open the Storyboard, and follow each media chip."
+      },
+      "media": {
+        "enabled": true,
+        "items": [
+          {
+            "mediaId": "media-image",
+            "caption": "Info image caption override",
+            "url": "./data/media/images/media-image.png",
+            "title": "Gallery Image",
+            "type": "image"
+          },
+          {
+            "mediaId": "media-video",
+            "caption": "Info video caption override",
+            "url": "./data/media/videos/media-video.mp4",
+            "title": "Gallery Video",
+            "type": "video"
+          },
+          {
+            "mediaId": "media-audio",
+            "caption": "Info audio caption override",
+            "url": "./data/media/audio/media-audio.mp3",
+            "title": "Gallery Audio",
+            "type": "audio"
+          },
+          {
+            "mediaId": "media-model",
+            "caption": "Info model caption override",
+            "url": "./data/media/models/media-model.glb",
+            "title": "Gallery Model",
+            "type": "model3d"
+          },
+          {
+            "mediaId": "media-document",
+            "caption": "Info document caption override",
+            "url": "./data/media/documents/media-document.pdf",
+            "title": "Gallery PDF",
+            "type": "embed"
+          }
+        ]
+      }
+    }
+  },
+  "storyIndex": {
+    "version": 1,
+    "strategy": "heading-derived",
+    "sections": [
+      {
+        "id": "media-lab-phase",
+        "title": "Media Lab Phase",
+        "order": 0,
+        "html": "<h2><span class=\"text-chip\" data-kind=\"phase\" data-phase-id=\"phase-media-lab\">Media Lab Phase</span></h2>\n<p>At <span class=\"text-chip\" data-kind=\"poi\" data-poi-id=\"poi-media-lab\" data-poi-lat=\"33.756\" data-poi-lon=\"-84.391\">Media Lab</span>, test video <span class=\"text-chip text-chip--media\" data-kind=\"video\" data-media-id=\"media-video\" data-url=\"./data/media/videos/media-video.mp4\" data-title=\"Gallery Video\">Gallery Video</span>, sound <span class=\"text-chip text-chip--media\" data-kind=\"sound\" data-media-id=\"media-audio\" data-url=\"./data/media/audio/media-audio.mp3\" data-title=\"Gallery Audio\">Gallery Audio</span>, document <span class=\"text-chip text-chip--media\" data-kind=\"document\" data-media-id=\"media-document\" data-url=\"./data/media/documents/media-document.pdf\" data-title=\"Gallery PDF\">Gallery PDF</span>, link <span class=\"text-chip text-chip--link\" data-kind=\"link\" data-url=\"https://example.com/rich-pwa-smoke\">Reference Link</span>, and time <span class=\"text-chip text-chip--time\" data-kind=\"time\" data-time=\"1945-05-08T12:00\">1945 marker</span>.</p>",
+        "text": "Media Lab Phase At Media Lab, test video Gallery Video, sound Gallery Audio, document Gallery PDF, link Reference Link, and time 1945 marker.",
+        "excerpt": "Media Lab Phase At Media Lab, test video Gallery Video, sound Gallery Audio, document Gallery PDF, link Reference Link, and time 1945 marker.",
+        "relatedPoiIds": [
+          "poi-media-lab"
+        ],
+        "relatedMediaIds": [
+          "media-video",
+          "media-audio",
+          "media-document"
+        ],
+        "relatedPhaseId": "phase-media-lab",
+        "timelineRefs": []
+      }
+    ]
+  },
+  "guideIndex": {
+    "version": 1,
+    "projectSummary": "Project",
+    "storyIndex": {
+      "version": 1,
+      "strategy": "heading-derived",
+      "sections": [
+        {
+          "id": "media-lab-phase",
+          "title": "Media Lab Phase",
+          "order": 0,
+          "html": "<h2><span class=\"text-chip\" data-kind=\"phase\" data-phase-id=\"phase-media-lab\">Media Lab Phase</span></h2>\n<p>At <span class=\"text-chip\" data-kind=\"poi\" data-poi-id=\"poi-media-lab\" data-poi-lat=\"33.756\" data-poi-lon=\"-84.391\">Media Lab</span>, test video <span class=\"text-chip text-chip--media\" data-kind=\"video\" data-media-id=\"media-video\" data-url=\"./data/media/videos/media-video.mp4\" data-title=\"Gallery Video\">Gallery Video</span>, sound <span class=\"text-chip text-chip--media\" data-kind=\"sound\" data-media-id=\"media-audio\" data-url=\"./data/media/audio/media-audio.mp3\" data-title=\"Gallery Audio\">Gallery Audio</span>, document <span class=\"text-chip text-chip--media\" data-kind=\"document\" data-media-id=\"media-document\" data-url=\"./data/media/documents/media-document.pdf\" data-title=\"Gallery PDF\">Gallery PDF</span>, link <span class=\"text-chip text-chip--link\" data-kind=\"link\" data-url=\"https://example.com/rich-pwa-smoke\">Reference Link</span>, and time <span class=\"text-chip text-chip--time\" data-kind=\"time\" data-time=\"1945-05-08T12:00\">1945 marker</span>.</p>",
+          "text": "Media Lab Phase At Media Lab, test video Gallery Video, sound Gallery Audio, document Gallery PDF, link Reference Link, and time 1945 marker.",
+          "excerpt": "Media Lab Phase At Media Lab, test video Gallery Video, sound Gallery Audio, document Gallery PDF, link Reference Link, and time 1945 marker.",
+          "relatedPoiIds": [
+            "poi-media-lab"
+          ],
+          "relatedMediaIds": [
+            "media-video",
+            "media-audio",
+            "media-document"
+          ],
+          "relatedPhaseId": "phase-media-lab",
+          "timelineRefs": []
+        }
+      ]
+    },
+    "poiIndex": [
+      {
+        "id": "poi-origin",
+        "title": "Origin Plaza",
+        "description": "Primary POI with image and model media.",
+        "category": "cat-origin",
+        "lat": 33.755,
+        "lon": -84.39,
+        "mediaIds": [
+          "media-image",
+          "media-model"
+        ]
+      },
+      {
+        "id": "poi-media-lab",
+        "title": "Media Lab",
+        "description": "Secondary POI with audio, video, and document media.",
+        "category": "cat-media",
+        "lat": 33.756,
+        "lon": -84.391,
+        "mediaIds": [
+          "media-video",
+          "media-audio",
+          "media-document"
+        ]
+      }
+    ],
+    "sourceIndex": {
+      "version": 1,
+      "generatedAt": null,
+      "sources": [
+        {
+          "type": "project",
+          "id": "project",
+          "label": "Project",
+          "excerpt": ""
+        },
+        {
+          "type": "info_page",
+          "id": "info-hero",
+          "label": "Custom Landing: Rich Published PWA Smoke",
+          "excerpt": "Landing and Info Page copy are customized from the Tool before export. · Atlanta Test District"
+        },
+        {
+          "type": "info_page",
+          "id": "info-context",
+          "label": "Project context",
+          "excerpt": "Info Page context: this PWA was generated specifically to verify published artifact rendering."
+        },
+        {
+          "type": "info_page",
+          "id": "info-why-it-matters",
+          "label": "Why it matters",
+          "excerpt": "Landing copy survives export · All media types are packaged · Storyboard chips remain actionable"
+        },
+        {
+          "type": "info_page",
+          "id": "info-theme-1",
+          "label": "Landing Customization",
+          "excerpt": "The generated PWA should show custom landing and info text."
+        },
+        {
+          "type": "info_page",
+          "id": "info-theme-2",
+          "label": "Media Coverage",
+          "excerpt": "The generated PWA should expose image, video, audio, model, document, and external media entries."
+        },
+        {
+          "type": "info_page",
+          "id": "info-how-to-explore",
+          "label": "How to explore",
+          "excerpt": "Launch the experience, open the Storyboard, and follow each media chip."
+        },
+        {
+          "type": "story_section",
+          "id": "media-lab-phase",
+          "label": "Media Lab Phase",
+          "excerpt": "Media Lab Phase At Media Lab, test video Gallery Video, sound Gallery Audio, document Gallery PDF, link Reference Link, and time 1945 marker.",
+          "relatedPoiIds": [
+            "poi-media-lab"
+          ],
+          "relatedMediaIds": [
+            "media-video",
+            "media-audio",
+            "media-document"
+          ],
+          "relatedPhaseId": "phase-media-lab"
+        },
+        {
+          "type": "poi",
+          "id": "poi-origin",
+          "label": "Origin Plaza",
+          "excerpt": "Primary POI with image and model media.",
+          "category": "cat-origin"
+        },
+        {
+          "type": "poi",
+          "id": "poi-media-lab",
+          "label": "Media Lab",
+          "excerpt": "Secondary POI with audio, video, and document media.",
+          "category": "cat-media"
+        },
+        {
+          "type": "phase",
+          "id": "phase-arrival",
+          "label": "Arrival Phase",
+          "excerpt": "The storyboard starts at Origin Plaza, then opens image Gallery Image and model Gallery Model evidence.",
+          "poiIds": [
+            "poi-origin"
+          ]
+        },
+        {
+          "type": "phase",
+          "id": "phase-media-lab",
+          "label": "Media Lab Phase",
+          "excerpt": "At Media Lab, test video Gallery Video, sound Gallery Audio, document Gallery PDF, link Reference Link, and time 1945 marker.",
+          "poiIds": [
+            "poi-media-lab"
+          ]
+        },
+        {
+          "type": "media",
+          "id": "media-image",
+          "label": "Gallery Image",
+          "excerpt": "Image caption from Media tab.",
+          "mediaType": "image"
+        },
+        {
+          "type": "media",
+          "id": "media-video",
+          "label": "Gallery Video",
+          "excerpt": "Video caption from Media tab.",
+          "mediaType": "video"
+        },
+        {
+          "type": "media",
+          "id": "media-audio",
+          "label": "Gallery Audio",
+          "excerpt": "Audio caption from Media tab.",
+          "mediaType": "audio"
+        },
+        {
+          "type": "media",
+          "id": "media-model",
+          "label": "Gallery Model",
+          "excerpt": "Model caption from Media tab.",
+          "mediaType": "model3d"
+        },
+        {
+          "type": "media",
+          "id": "media-document",
+          "label": "Gallery PDF",
+          "excerpt": "Document caption from Media tab.",
+          "mediaType": "embed"
+        },
+        {
+          "type": "media",
+          "id": "media-external-video",
+          "label": "External Video",
+          "excerpt": "External video URL should remain remote.",
+          "mediaType": "video"
+        }
+      ]
+    },
+    "defaultSuggestions": [
+      "Explain this project",
+      "Show the key locations",
+      "Show the locations in the next step",
+      "Let me explore"
+    ]
+  },
+  "sourceIndex": {
+    "version": 1,
+    "generatedAt": null,
+    "sources": [
+      {
+        "type": "project",
+        "id": "project",
+        "label": "Project",
+        "excerpt": ""
+      },
+      {
+        "type": "info_page",
+        "id": "info-hero",
+        "label": "Custom Landing: Rich Published PWA Smoke",
+        "excerpt": "Landing and Info Page copy are customized from the Tool before export. · Atlanta Test District"
+      },
+      {
+        "type": "info_page",
+        "id": "info-context",
+        "label": "Project context",
+        "excerpt": "Info Page context: this PWA was generated specifically to verify published artifact rendering."
+      },
+      {
+        "type": "info_page",
+        "id": "info-why-it-matters",
+        "label": "Why it matters",
+        "excerpt": "Landing copy survives export · All media types are packaged · Storyboard chips remain actionable"
+      },
+      {
+        "type": "info_page",
+        "id": "info-theme-1",
+        "label": "Landing Customization",
+        "excerpt": "The generated PWA should show custom landing and info text."
+      },
+      {
+        "type": "info_page",
+        "id": "info-theme-2",
+        "label": "Media Coverage",
+        "excerpt": "The generated PWA should expose image, video, audio, model, document, and external media entries."
+      },
+      {
+        "type": "info_page",
+        "id": "info-how-to-explore",
+        "label": "How to explore",
+        "excerpt": "Launch the experience, open the Storyboard, and follow each media chip."
+      },
+      {
+        "type": "story_section",
+        "id": "media-lab-phase",
+        "label": "Media Lab Phase",
+        "excerpt": "Media Lab Phase At Media Lab, test video Gallery Video, sound Gallery Audio, document Gallery PDF, link Reference Link, and time 1945 marker.",
+        "relatedPoiIds": [
+          "poi-media-lab"
+        ],
+        "relatedMediaIds": [
+          "media-video",
+          "media-audio",
+          "media-document"
+        ],
+        "relatedPhaseId": "phase-media-lab"
+      },
+      {
+        "type": "poi",
+        "id": "poi-origin",
+        "label": "Origin Plaza",
+        "excerpt": "Primary POI with image and model media.",
+        "category": "cat-origin"
+      },
+      {
+        "type": "poi",
+        "id": "poi-media-lab",
+        "label": "Media Lab",
+        "excerpt": "Secondary POI with audio, video, and document media.",
+        "category": "cat-media"
+      },
+      {
+        "type": "phase",
+        "id": "phase-arrival",
+        "label": "Arrival Phase",
+        "excerpt": "The storyboard starts at Origin Plaza, then opens image Gallery Image and model Gallery Model evidence.",
+        "poiIds": [
+          "poi-origin"
+        ]
+      },
+      {
+        "type": "phase",
+        "id": "phase-media-lab",
+        "label": "Media Lab Phase",
+        "excerpt": "At Media Lab, test video Gallery Video, sound Gallery Audio, document Gallery PDF, link Reference Link, and time 1945 marker.",
+        "poiIds": [
+          "poi-media-lab"
+        ]
+      },
+      {
+        "type": "media",
+        "id": "media-image",
+        "label": "Gallery Image",
+        "excerpt": "Image caption from Media tab.",
+        "mediaType": "image"
+      },
+      {
+        "type": "media",
+        "id": "media-video",
+        "label": "Gallery Video",
+        "excerpt": "Video caption from Media tab.",
+        "mediaType": "video"
+      },
+      {
+        "type": "media",
+        "id": "media-audio",
+        "label": "Gallery Audio",
+        "excerpt": "Audio caption from Media tab.",
+        "mediaType": "audio"
+      },
+      {
+        "type": "media",
+        "id": "media-model",
+        "label": "Gallery Model",
+        "excerpt": "Model caption from Media tab.",
+        "mediaType": "model3d"
+      },
+      {
+        "type": "media",
+        "id": "media-document",
+        "label": "Gallery PDF",
+        "excerpt": "Document caption from Media tab.",
+        "mediaType": "embed"
+      },
+      {
+        "type": "media",
+        "id": "media-external-video",
+        "label": "External Video",
+        "excerpt": "External video URL should remain remote.",
+        "mediaType": "video"
+      }
+    ]
+  },
+  "ai": {
+    "enabled": false,
+    "guideIndex": {
+      "version": 1,
+      "projectSummary": "Project",
+      "storyIndex": {
+        "version": 1,
+        "strategy": "heading-derived",
+        "sections": [
+          {
+            "id": "media-lab-phase",
+            "title": "Media Lab Phase",
+            "order": 0,
+            "html": "<h2><span class=\"text-chip\" data-kind=\"phase\" data-phase-id=\"phase-media-lab\">Media Lab Phase</span></h2>\n<p>At <span class=\"text-chip\" data-kind=\"poi\" data-poi-id=\"poi-media-lab\" data-poi-lat=\"33.756\" data-poi-lon=\"-84.391\">Media Lab</span>, test video <span class=\"text-chip text-chip--media\" data-kind=\"video\" data-media-id=\"media-video\" data-url=\"./data/media/videos/media-video.mp4\" data-title=\"Gallery Video\">Gallery Video</span>, sound <span class=\"text-chip text-chip--media\" data-kind=\"sound\" data-media-id=\"media-audio\" data-url=\"./data/media/audio/media-audio.mp3\" data-title=\"Gallery Audio\">Gallery Audio</span>, document <span class=\"text-chip text-chip--media\" data-kind=\"document\" data-media-id=\"media-document\" data-url=\"./data/media/documents/media-document.pdf\" data-title=\"Gallery PDF\">Gallery PDF</span>, link <span class=\"text-chip text-chip--link\" data-kind=\"link\" data-url=\"https://example.com/rich-pwa-smoke\">Reference Link</span>, and time <span class=\"text-chip text-chip--time\" data-kind=\"time\" data-time=\"1945-05-08T12:00\">1945 marker</span>.</p>",
+            "text": "Media Lab Phase At Media Lab, test video Gallery Video, sound Gallery Audio, document Gallery PDF, link Reference Link, and time 1945 marker.",
+            "excerpt": "Media Lab Phase At Media Lab, test video Gallery Video, sound Gallery Audio, document Gallery PDF, link Reference Link, and time 1945 marker.",
+            "relatedPoiIds": [
+              "poi-media-lab"
+            ],
+            "relatedMediaIds": [
+              "media-video",
+              "media-audio",
+              "media-document"
+            ],
+            "relatedPhaseId": "phase-media-lab",
+            "timelineRefs": []
+          }
+        ]
+      },
+      "poiIndex": [
+        {
+          "id": "poi-origin",
+          "title": "Origin Plaza",
+          "description": "Primary POI with image and model media.",
+          "category": "cat-origin",
+          "lat": 33.755,
+          "lon": -84.39,
+          "mediaIds": [
+            "media-image",
+            "media-model"
+          ]
+        },
+        {
+          "id": "poi-media-lab",
+          "title": "Media Lab",
+          "description": "Secondary POI with audio, video, and document media.",
+          "category": "cat-media",
+          "lat": 33.756,
+          "lon": -84.391,
+          "mediaIds": [
+            "media-video",
+            "media-audio",
+            "media-document"
+          ]
+        }
+      ],
+      "sourceIndex": {
+        "version": 1,
+        "generatedAt": null,
+        "sources": [
+          {
+            "type": "project",
+            "id": "project",
+            "label": "Project",
+            "excerpt": ""
+          },
+          {
+            "type": "info_page",
+            "id": "info-hero",
+            "label": "Custom Landing: Rich Published PWA Smoke",
+            "excerpt": "Landing and Info Page copy are customized from the Tool before export. · Atlanta Test District"
+          },
+          {
+            "type": "info_page",
+            "id": "info-context",
+            "label": "Project context",
+            "excerpt": "Info Page context: this PWA was generated specifically to verify published artifact rendering."
+          },
+          {
+            "type": "info_page",
+            "id": "info-why-it-matters",
+            "label": "Why it matters",
+            "excerpt": "Landing copy survives export · All media types are packaged · Storyboard chips remain actionable"
+          },
+          {
+            "type": "info_page",
+            "id": "info-theme-1",
+            "label": "Landing Customization",
+            "excerpt": "The generated PWA should show custom landing and info text."
+          },
+          {
+            "type": "info_page",
+            "id": "info-theme-2",
+            "label": "Media Coverage",
+            "excerpt": "The generated PWA should expose image, video, audio, model, document, and external media entries."
+          },
+          {
+            "type": "info_page",
+            "id": "info-how-to-explore",
+            "label": "How to explore",
+            "excerpt": "Launch the experience, open the Storyboard, and follow each media chip."
+          },
+          {
+            "type": "story_section",
+            "id": "media-lab-phase",
+            "label": "Media Lab Phase",
+            "excerpt": "Media Lab Phase At Media Lab, test video Gallery Video, sound Gallery Audio, document Gallery PDF, link Reference Link, and time 1945 marker.",
+            "relatedPoiIds": [
+              "poi-media-lab"
+            ],
+            "relatedMediaIds": [
+              "media-video",
+              "media-audio",
+              "media-document"
+            ],
+            "relatedPhaseId": "phase-media-lab"
+          },
+          {
+            "type": "poi",
+            "id": "poi-origin",
+            "label": "Origin Plaza",
+            "excerpt": "Primary POI with image and model media.",
+            "category": "cat-origin"
+          },
+          {
+            "type": "poi",
+            "id": "poi-media-lab",
+            "label": "Media Lab",
+            "excerpt": "Secondary POI with audio, video, and document media.",
+            "category": "cat-media"
+          },
+          {
+            "type": "phase",
+            "id": "phase-arrival",
+            "label": "Arrival Phase",
+            "excerpt": "The storyboard starts at Origin Plaza, then opens image Gallery Image and model Gallery Model evidence.",
+            "poiIds": [
+              "poi-origin"
+            ]
+          },
+          {
+            "type": "phase",
+            "id": "phase-media-lab",
+            "label": "Media Lab Phase",
+            "excerpt": "At Media Lab, test video Gallery Video, sound Gallery Audio, document Gallery PDF, link Reference Link, and time 1945 marker.",
+            "poiIds": [
+              "poi-media-lab"
+            ]
+          },
+          {
+            "type": "media",
+            "id": "media-image",
+            "label": "Gallery Image",
+            "excerpt": "Image caption from Media tab.",
+            "mediaType": "image"
+          },
+          {
+            "type": "media",
+            "id": "media-video",
+            "label": "Gallery Video",
+            "excerpt": "Video caption from Media tab.",
+            "mediaType": "video"
+          },
+          {
+            "type": "media",
+            "id": "media-audio",
+            "label": "Gallery Audio",
+            "excerpt": "Audio caption from Media tab.",
+            "mediaType": "audio"
+          },
+          {
+            "type": "media",
+            "id": "media-model",
+            "label": "Gallery Model",
+            "excerpt": "Model caption from Media tab.",
+            "mediaType": "model3d"
+          },
+          {
+            "type": "media",
+            "id": "media-document",
+            "label": "Gallery PDF",
+            "excerpt": "Document caption from Media tab.",
+            "mediaType": "embed"
+          },
+          {
+            "type": "media",
+            "id": "media-external-video",
+            "label": "External Video",
+            "excerpt": "External video URL should remain remote.",
+            "mediaType": "video"
+          }
+        ]
+      },
+      "defaultSuggestions": [
+        "Explain this project",
+        "Show the key locations",
+        "Show the locations in the next step",
+        "Let me explore"
+      ]
+    },
+    "provider": null,
+    "endpoint": null,
+    "projectId": null,
+    "model": null,
+    "apiKey": null,
+    "caps": {
+      "monthlyRequestCap": 0,
+      "monthlySpendCapCents": 0
+    },
+    "exhaustion": {
+      "behavior": "message",
+      "message": "AI is temporarily unavailable for this experience. Please try again later."
+    },
+    "mode": "general",
+    "features": {
+      "voiceInput": true,
+      "streamingResponse": true,
+      "spatialActions": [
+        "focusLocation",
+        "focusPoi",
+        "highlightPois",
+        "setMapMode",
+        "showToast",
+        "showTimeline",
+        "hideTimeline",
+        "setTimelineYear",
+        "selectPoi",
+        "deselectPoi",
+        "filterByCategory",
+        "clearFilters"
+      ]
+    }
+  }
+}

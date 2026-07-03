@@ -1,0 +1,42 @@
+{
+  "name": "Rich Published PWA Smoke Fixture",
+  "short_name": "Rich Publish",
+  "description": "Generated from the Tool path to test landing, info pages, all media types, media chips, and storyboard content.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#1a1a1a",
+  "theme_color": "#4f46e5",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "./assets/icons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./assets/img/mixx-ai.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": [
+    "travel",
+    "education",
+    "entertainment"
+  ],
+  "pwa_id": "22222222-3333-4444-8555-666666666666",
+  "project_id": "rich-published-pwa-smoke",
+  "publish_id": "22222222-3333-4444-8555-666666666666",
+  "publisher_org_id": "org-rich-pwa-smoke",
+  "published_at": 1783057562230,
+  "pwa_build_id": "build-2026-07-03-22222222",
+  "template_version": "4.0.0"
+}

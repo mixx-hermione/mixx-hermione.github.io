@@ -1,0 +1,19 @@
+{
+  "mode": "export",
+  "apiBase": "https://api.mixxreality.com",
+  "syncUrl": "wss://api.mixxreality.com/sync",
+  "appSlug": null,
+  "embeddedDataPath": "./data/project.json",
+  "cesiumToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4NzZhODU2Ny1lZTE4LTQ4YjYtOGFkMC1hZjlhZTMwODc2YzEiLCJpZCI6MTUxOTQ2LCJpYXQiOjE3NjQ4NDYwNjB9.uYLrM2KTm9NhntgmZCB6nFkaEztJSZJLAGYlnPBkidE",
+  "telemetry": {
+    "enabled": false,
+    "endpoint": "https://api.mixxreality.com/pwa-api/events"
+  },
+  "features": {
+    "liveUpdates": false,
+    "deviceSync": false,
+    "telemetry": false,
+    "privateAuth": false,
+    "ai": true
+  }
+}

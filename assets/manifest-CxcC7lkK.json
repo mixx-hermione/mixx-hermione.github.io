@@ -1,0 +1,53 @@
+{
+  "name": "Mixx Reality",
+  "short_name": "Mixx",
+  "description": "Spatial exploration and narrative experience",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#1a1a1a",
+  "background_color": "#1a1a1a",
+  "categories": ["travel", "lifestyle", "education"],
+  "icons": [
+    {
+      "src": "./assets/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./assets/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./assets/icons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [],
+  "prefer_related_applications": false,
+  "pwa_id": "00000000-0000-0000-0000-000000000000",
+  "project_id": "00000000-0000-0000-0000-000000000000",
+  "publish_id": "00000000-0000-0000-0000-000000000000",
+  "published_at": 0,
+  "pwa_build_id": "dev-build",
+  "template_version": "4.0.0"
+}

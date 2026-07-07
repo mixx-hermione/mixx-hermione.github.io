@@ -269,7 +269,7 @@ function isApiRequest(url) {
 }
 
 function isMediaAsset(url) {
-  return /\.(png|jpg|jpeg|gif|webp|svg|ico|mp4|webm|mov|mp3|wav|ogg|m4a|glb|gltf|pdf)$/i.test(url.pathname);
+  return /\.(png|jpg|jpeg|gif|webp|svg|ico|mp4|webm|mov|mp3|wav|ogg|m4a|glb|gltf|dae|usdz|usd|ifc|pdf)$/i.test(url.pathname);
 }
 
 function isFontAsset(url) {
@@ -288,6 +288,7 @@ function isMapTile(url) {
 
 function isCDNAsset(url) {
   return url.hostname.includes('cdn') ||
+         url.hostname.includes('esm.sh') ||
          url.hostname.includes('unpkg.com') ||
          url.hostname.includes('cdnjs.') ||
          url.hostname.includes('jsdelivr');
@@ -949,7 +950,8 @@ async function precachePOIMedia(pois = []) {
       poi.thumbnail,
       poi.image,
       ...(poi.images || []),
-      ...(poi.audio || [])
+      ...(poi.audio || []),
+      ...(poi.media || []).map(item => item.url || item.dataURL || item.src)
     ].filter(Boolean);
 
     for (const url of mediaUrls) {

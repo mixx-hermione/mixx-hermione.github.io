@@ -1,5 +1,7 @@
 {
   "source_artifact": "/home/testbeduser/Mixx-Reality/tool/.planning/evidence/pwa-rich-published-smoke/artifact/extracted",
-  "purpose": "Rich Mixx published PWA smoke artifact with all test media types",
-  "generated_by": "Hermes Hermione"
+  "purpose": "Rich Mixx published PWA smoke artifact with all test media types, Three.js GLB/GLTF model viewer, and Cesium POI model rendering",
+  "generated_by": "Hermes Hermione",
+  "viewer": "Three.js via pwa-template/assets/x3dom-viewer-lZtQSejZ.js export contract X",
+  "updated_at": "2026-07-07"
 }

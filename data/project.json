@@ -5,7 +5,7 @@
     "title": "Rich Published PWA Smoke Fixture",
     "description": "Generated from the Tool path to test landing, info pages, all media types, media chips, and storyboard content.",
     "version": "9.9.0",
-    "buildId": "build-2026-07-03",
+    "buildId": "build-2026-07-07",
     "updatedAt": "2026-07-03T04:30:00.000Z",
     "coverImage": "./data/media/images/media-image.png",
     "thumbnail": "./data/media/images/media-image.png",
@@ -16,7 +16,7 @@
     "title": "Rich Published PWA Smoke Fixture",
     "description": "Generated from the Tool path to test landing, info pages, all media types, media chips, and storyboard content.",
     "version": "9.9.0",
-    "buildId": "build-2026-07-03",
+    "buildId": "build-2026-07-07",
     "updatedAt": "2026-07-03T04:30:00.000Z",
     "coverImage": "./data/media/images/media-image.png",
     "thumbnail": "./data/media/images/media-image.png",
@@ -103,7 +103,7 @@
         "poi-origin"
       ],
       "visibilityMode": "focus",
-      "updatedAt": "2026-07-03T05:46:02.222Z",
+      "updatedAt": "2026-07-07T06:42:56.109Z",
       "snapshot": {
         "viewMode": "map3d",
         "mapState": {
@@ -133,7 +133,7 @@
         "poi-media-lab"
       ],
       "visibilityMode": "highlight",
-      "updatedAt": "2026-07-03T05:46:02.222Z",
+      "updatedAt": "2026-07-07T06:42:56.109Z",
       "narrative": "At Media Lab, test video Gallery Video, sound Gallery Audio, document Gallery PDF, link Reference Link, and time 1945 marker.",
       "mediaIds": [
         "media-video",
